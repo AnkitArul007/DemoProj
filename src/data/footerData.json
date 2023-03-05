@@ -1,0 +1,30 @@
+[
+    {
+        "heading":"Help",
+        "subLinks":[
+            "FAQ",
+            "Review",
+            "My Account",
+            "Corporate",
+            "Contact Us"
+        ]
+    },
+    {
+        "heading":"Shop",
+        "subLinks":[
+            "PureV",
+            "Gifts",
+            "Travel",
+            "Accesoies"
+        ]
+    },
+    {
+        "heading":"About",
+        "subLinks":[
+            "Magazine",
+            "Press",
+            "Our Story",
+            "Tech"
+        ]
+    }
+]

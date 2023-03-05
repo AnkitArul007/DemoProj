@@ -1,0 +1,378 @@
+.product-name-n-info > h1{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+}
+
+.generalInfo{
+    min-width: 88px;
+    min-height: 26px;
+    
+}
+
+.generalInfo.active{
+    border: 1px solid #13395B;
+    padding: 0.5rem 1rem ;
+    border-radius: 5px;
+}
+
+.generalInfo.active >p{
+    color: #13395B;
+}
+
+.generalInfo >p{
+    margin: 0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #9A9CA5;
+}
+
+.main-img-cont{
+    background: rgba(0, 127, 185, 0.2);
+    border: 1px solid #424551;
+    border-radius: 16px;
+    padding: 0rem 5rem;
+    max-width: 600px;
+    min-height: 600px;
+}
+
+.left-arrow, .right-arrow{
+    width: 48px;
+    height: 48px;
+    left: 32px;
+    top: 439px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    opacity: 0.5;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.left-arrow:hover, .right-arrow:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.stars-cont > .fill{
+    color: rgba(248, 152, 40, 1);
+}
+
+.discountedPrice{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+/* display: flex;
+align-items: center; */
+color: #13395B;
+}
+
+.originalPrice{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+
+    display: flex;
+    align-items: center;
+    text-decoration-line: line-through;
+
+    /* gray/700 */
+
+    color: #787A80;
+}
+
+.discountCont > p{
+    height: 28px;
+    width: 54px !important;
+    background: #FF4242;
+    border-radius: 4px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.blackColor{
+    height: 24px;
+    width: 24px;
+    border: 1px solid #17696A;
+    border-radius: 50%;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.whiteColor, .blueColor{
+    height: 24px;
+    width: 24px;
+    border: 1px solid #D7DADD;
+    border-radius: 50%;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.colors-cont > p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9A9CA5;
+}
+
+.black{
+    height: 16px;
+    width: 16px;
+    background-color: #22272B;
+    border-radius: 50%;
+}
+
+.blue{
+    height: 16px;
+    width: 16px;
+    background-color: #17696A;;
+    border-radius: 50%;
+}
+
+.insulatedCont{
+    min-height: 26px;
+    min-width: 88px;
+    border: 1px solid #13395B;
+    padding: 0.5rem 1rem ;
+    border-radius: 5px;
+}
+
+.insulatedCont > p{
+    margin: 0;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 314% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.5px;
+
+color: #17696A;
+}
+
+.unInsulatedCont{
+    min-height: 26px;
+    min-width: 88px;
+    border: 1px solid #9A9CA5;
+    padding: 0.5rem 1rem ;
+    border-radius: 5px;
+}
+
+.unInsulatedCont > p{
+    margin: 0;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 314% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.5px;
+
+color: #9A9CA5;
+}
+
+.select{
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9A9CA5;
+    padding: 0.5rem;
+}
+
+.addingProductCont > input{
+    width: 50px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+}
+
+.addingProductCont > .addToCart{
+    background: #13395B;
+    border-radius: 4px;
+    height: 44px;
+    color: #ffffff;
+}
+
+.fav{
+    border-radius: 4px;
+    height: 44px;
+    color: #13395B;
+    background: #ffffff;
+}
+
+.deliveryDetails-Cont{
+    border-bottom: 1px solid rgba(229, 232, 237, 1);
+}
+
+.deliveryDetails-Cont > p:nth-child(1){
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 26px */
+
+display: flex;
+align-items: center;
+
+/* gray/900 */
+
+color: #1E212C;
+}
+
+.deliveryDetails-Cont > p:nth-child(2){
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+
+display: flex;
+align-items: center;
+
+/* gray/800 */
+
+color: #424551;
+}
+
+.head > div{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+display: flex;
+align-items: center;
+letter-spacing: 1px;
+
+/* gray/700 */
+
+color: #787A80;
+}
+
+.contents > div{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #424551;
+}
+
+.head{
+    border-image-slice: 1;
+    border-block-end: 1px solid;
+    border-image-source: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+    ;
+}
+
+.contents{
+    border-image-slice: 1;
+    border-block-end: 1px solid;
+    border-image-source: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+    ;
+}
+
+.contents:last-child{
+    border: none;
+}
+
+.returnPolicy > p:nth-child(1){
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 160%;
+display: flex;
+align-items: center;
+color: #1E212C;
+}
+
+.returnPolicy > p:nth-child(2){
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #424551;
+}
+
+.returnPolicy > ul > li{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #424551;
+
+}
+
+.returnPolicy> ul{
+    border-bottom: 1px solid #E5E8ED;
+}
+
+.third-row > p {
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+color: #1E212C;
+
+}
+
+.bottle-desc-cont > h4{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    color: #13395B;
+}
+
+.bottle-desc-cont > p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1E212C;
+}

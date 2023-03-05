@@ -1,0 +1,136 @@
+
+.media-cont > h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.media-cont > .links > ul{
+    list-style: none;
+}
+
+.media-cont > .links > ul > li > a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #272727;
+}
+
+.mail-cont-wrapper > p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.mail-cont-wrapper > .input-box-cont{
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 29px;
+}
+
+.input-box-cont > form{
+    height: 100%;
+}
+
+.input-box-cont > form > input{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    outline: none;
+    height: inherit;
+}
+
+.input-box-cont > form > input::placeholder{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #747677;
+}
+
+.input-box-cont > form > button{
+    background: linear-gradient(180deg, #004E84 0%, #01ADEB 100%);
+    border: 1px solid #1C7063;
+    border-radius: 29px;
+    height: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+.second-half-cont > .arachnomesh-copyright > p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.tnC p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.tnC p>a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.wave1{
+    animation: flow 20s linear infinite;
+}
+
+.wave2{
+    animation: flow 18s linear infinite;
+}
+
+.wave3{
+    animation: flow 17s linear infinite;
+}
+
+@keyframes flow {
+    from{
+        transform: translateX(0px);
+    }to{
+        transform: translateX(-200vw);
+    }
+}
+
+.media{
+    display: grid;
+    place-items: center;
+    width: 30.09px;
+    height: 30.09px;
+    background: #FFFFFF;
+    border: 1px solid #13395B;
+    border-radius: 50%;
+}

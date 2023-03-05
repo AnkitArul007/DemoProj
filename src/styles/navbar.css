@@ -1,0 +1,25 @@
+.nav-wrapper{
+    height: 10vh;
+}
+
+.links-cont{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    vertical-align: middle;
+}
+
+.links-cont > ul > li{
+    list-style: none;
+}
+
+.links-cont > ul > li > a.active{
+    color: #222222;
+}
+
+.links-cont > ul > li >a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+}
