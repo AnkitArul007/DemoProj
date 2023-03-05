@@ -20,12 +20,18 @@ import Navbar from './navbar'
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import { MdFavoriteBorder } from "react-icons/md"
 
-import PrductsBottle from "../components/ProductsBottle"
+import ProductsBottle from "../components/ProductsBottle"
 import Footer from "../components/Footer"
 
 import GreenBottle from "../images/productsGreenBottle.svg"
 import OrangeBottle from "../images/productsOrangeBottle.svg"
 import Mug from "../images/productsMug.svg"
+import ColoredRect from "../images/coloredRect.svg"
+import MiniCap from "../images/miniCap.svg"
+import MiniBottle from "../images/miniBottle.svg"
+import Play from "../images/play.svg"
+
+// import { motion } from "framer-motion"
 
 const img = [
     {
@@ -49,7 +55,8 @@ const ProductsPage = () => {
   return (
     <>
         <section className='container-fluid productsPage-wrapper'style={{
-        height:"max-content"
+        height:"max-content",
+        borderBottom:"2px solid #13395B"
     }} >
         <Navbar />
         <div className="first-row row col-11 ">
@@ -84,8 +91,15 @@ const ProductsPage = () => {
         <div className="second-row row col-11 mt-3">
             <div className="left-half-wrapper col-6 d-flex flex-column align-items-start p-0 pe-5">
                 <div className="main-img-cont position-relative col-12 d-flex flex-column justify-content-center align-items-center">
-                    <img src={MainCap} alt="" />
-                    <img src={MainBottle} alt="" />
+                    <div className='upperImg-Cont position-relative d-flex flex-column justify-content-center align-items-center p-0'
+                    >
+                        <img className='m-0' src={MainCap} alt="" />
+                        <img className='position-absolute m-0' src={ColoredRect} alt=""
+                        />
+                    </div>
+                    <img src={MainBottle} alt="" 
+                        initial={{x:0, y:-24}}
+                    />
                     <div className="navigation-arrows position-absolute col-12 px-3 d-flex justify-content-between align-content-center" style={{
                         top:"",
                         left:"0"
@@ -100,8 +114,8 @@ const ProductsPage = () => {
                 </div>
 
                 <div className="small-Image-cont d-flex justify-content-between align-items-center col-12 mt-3">
-                    <div className="side-img-cont col-2">
-                        <img src={Img1} alt="" />
+                    <div className="side-img-cont col-2 d-flex justify-content-center align-items-center">
+                        <img src={Img1} alt=""/>
                     </div>
 
                     <div className="side-img-cont col-2">
@@ -116,8 +130,12 @@ const ProductsPage = () => {
                         <img src={Img4} alt="" />
                     </div>
 
-                    <div className="side-img-cont col-2">
-                        <img src={Img4} alt="" />
+                    <div className="side-img-cont col-2 d-flex flex-column justify-content-center align-items-center position-relative">
+                        <img src={MiniCap} alt="" />
+                        <img src={MiniBottle} alt="" />
+                        <div className="cover position-absolute">
+                            <img src={Play} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,7 +257,7 @@ const ProductsPage = () => {
                 {/* using es6 map method to render the components */}
                 {img.map(ele => (
                     <div>
-                        <PrductsBottle item={ele.img}/>
+                        <ProductsBottle item={ele.img}/>
                         <div className='bottle-desc-cont col-12 text-center mt-1'>
                             <h4>{ele.name}</h4>
                             <p>{ele.tag}</p>
