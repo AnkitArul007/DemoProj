@@ -11,11 +11,15 @@ import Img4 from "../images/img4.svg"
 // import Img1 from "../images/img1.svg"
 import { AiFillStar } from "react-icons/ai"
 
+import Fb from "../images/facebook.svg"
+import Tw from "../images/twitter.svg"
+import P from "../images/p.svg"
+
 import Visa from "../images/visa.svg"
 import MasterCard from "../images/masterCard.svg"
 import Paypal from "../images/pay-pal.svg"
 
-import Navbar from './navbar'
+import { Link } from "react-router-dom"
 
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import { MdFavoriteBorder } from "react-icons/md"
@@ -58,7 +62,6 @@ const ProductsPage = () => {
         height:"max-content",
         borderBottom:"2px solid #13395B"
     }} >
-        <Navbar />
         <div className="first-row row col-11 ">
             <div className="product-name-n-info p-0">
                 <h1>Bottle Filtered <span>_</span></h1>
@@ -136,6 +139,21 @@ const ProductsPage = () => {
                         <div className="cover position-absolute">
                             <img src={Play} alt="" />
                         </div>
+                    </div>
+                </div>
+
+                <div className="media-handles-cont col-12 d-flex justify-content-center align-items-center gap-4 mt-2">
+                    <h4>Share:</h4>
+                    <div className="mediaHandles d-flex justify-content-center align-items-start gap-3">
+                        <Link to='/'>
+                            <img src={Fb} alt="" />
+                        </Link>
+                        <Link to='/'>
+                            <img src={Tw} alt="" />
+                        </Link>
+                        <Link to='/'>
+                            <img src={P} alt="" />
+                        </Link>
                     </div>
                 </div>
             </div>

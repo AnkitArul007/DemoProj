@@ -1,25 +1,36 @@
 import './App.css';
-
+import { createBrowserRouter, createRoutesFromElements ,Route, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from "./components/navbar";
-import Section1 from './components/Section1';
-import Section2 from './components/Section2';
-import Section3 from './components/Section3';
-import Section4 from './components/Section4';
-import Footer from './components/Footer';
+import Home from "./HomePage"
 import ProductsPage from './components/ProductsPage';
 
-function App() {  
+function App() { 
+  
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path='/' element={<Root />}>
+        <Route index path='/' element={<Home />} />
+        <Route path='/products' element={<ProductsPage />} />
+      </Route>
+    )
+  )
+
   return (
-    <>
-      <Navbar />
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Footer/>
-      <ProductsPage />
-    </>
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
 export default App;
+
+const Root = ()=>{
+  return (
+    <>
+      <Navbar />
+      <div>
+        <Outlet />
+      </div>
+    </>
+  )
+}
