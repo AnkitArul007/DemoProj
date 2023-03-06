@@ -1,8 +1,6 @@
 import React from 'react'
 import "../styles/productsBottle.css"
-// import GreenBottle from "../images/productsGreenBottle.svg"
-// import OrangeBottle from "../images/productsOrangeBottle.svg"
-// import Mug from "../images/productsMug.svg"
+
 
 const ProductsBottle = (props) => {
   return (
@@ -11,7 +9,7 @@ const ProductsBottle = (props) => {
             <img src={props.item} alt="bottleImage" />
 
 
-            <div className="hidden-Cont position-absolute d-flex justify-content-center align-items-center">
+            <div className="hidden-Cont position-absolute d-flex justify-content-center align-items-center ">
                 <div className="size-cont col-8 d-flex flex-column align-items-center justify-content-start">
                     <p>Select Size</p>
                     <div className="sizes d-flex justify-content-between align-items-center col-10">
