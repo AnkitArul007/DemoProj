@@ -2,6 +2,7 @@
     height: 80vh;
     width: 100%;
     background: linear-gradient(180deg, #00243E 0%, #01ADEB 100%), linear-gradient(180deg, #1C5B4F 0%, #1C8E80 100%), #FFFFFF;;
+    background: #000;
 }
 
 .section-4-wrapper > h2{
